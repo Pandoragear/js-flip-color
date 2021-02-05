@@ -3,7 +3,7 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 btn.addEventListener('click', function(){
-    // get random number between 0 -3 colors
+    // get random number between 0 - 3 colors
     const randomNumber = getRandomNumber();
     console.log(randomNumber);
     document.body.style.backgroundColor = colors[randomNumber];
@@ -12,6 +12,6 @@ btn.addEventListener('click', function(){
 
 
 function getRandomNumber(){
-    return Math.random();
+    return Math.floor(Math.random() * colors.length);
 
 }
