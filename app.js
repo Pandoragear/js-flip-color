@@ -10,7 +10,7 @@ btn.addEventListener('click', function(){
     color.textContent = colors[randomNumber];
 })
 
-
+// Funciton to invoke random hex number 
 function getRandomNumber(){
     return Math.floor(Math.random() * colors.length);
 
