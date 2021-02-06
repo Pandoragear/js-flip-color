@@ -8,4 +8,6 @@ let hexColor = "#";
 for(let i = 0; i<6; i++){
     hexColor += hex[0]
 }
+color.textContent = hexColor;
+document.body.style.backgroundColor = hexColor;
 })
